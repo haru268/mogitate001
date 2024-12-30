@@ -1,2 +1,5 @@
-*
-!.gitignore
+/storage/*.key
+/storage/debugbar/
+/storage/framework/
+/storage/logs/
+!storage/app/public

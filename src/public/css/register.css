@@ -1,0 +1,206 @@
+html,
+body {
+    height: 100%;
+    /* ページ全体を含む高さを設定 */
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    /* 垂直スクロールバーを有効化 */
+    background: #F8F8F8;
+    /* 任意の背景色 */
+}
+/* コンテナを画面の中央に配置する */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    /* コンテナの高さをビューポートの高さに設定 */
+    max-height: 100vh;
+    /* 最大高さもビューポートの高さに制限 */
+    padding: 20px;
+    margin-left: -400px;
+        /* 左に20px移動 */
+        margin-top: 10px;
+}
+
+.register-form-control {
+    width: 300%;
+    /* 全幅を使用 */
+    max-width: 800px;
+    /* 最大幅を570pxに設定 */
+    padding: 15px;
+    /* 内側のパディングを15pxに設定 */
+    margin-bottom: 0px;
+    /* 下マージンを20pxに設定 */
+    font-size: 14px;
+    /* フォントサイズを16pxに設定 */
+    border: 1px solid #ccc;
+    /* 境界線のスタイルを指定 */
+    border-radius: 2px;
+    /* 角を丸くする */
+}
+
+.required-badge {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.register-btn-register {
+    width: 45%;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #F5C900;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-right: -50%;
+    /* 右に5%のマージンを追加して少し余白を作る */
+    margin-left: 10px;
+    display: block;
+    text-align: center;
+}
+
+.register-btn-back {
+    width: 35%;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #cccccc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+        /* 右のマージンを自動に設定して左寄せに */
+        margin-left: 100px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.register-button-container {
+    display: flex;
+    /* ボタン間に均等なスペースを保つ */
+    padding: 5px;
+    width: 150%;
+    /* コンテナの幅を90%に設定 */
+    margin: 0 auto;
+    /* 水平方向の中央揃え */
+}
+
+.register-label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 季節チェックボックスグループのスタイル */
+.register-checkbox-group {
+    display: flex;
+    justify-content: center;
+    /* 中央揃え */
+    flex-wrap: wrap;
+    /* 折り返しを許可 */
+    margin-top: 5px;
+        /* 上の隙間を小さくする */
+        margin-bottom: 5px;
+        /* 下の隙間を調整 */
+        margin-left: -10px;
+}
+
+.register-checkbox-label {
+    display: flex;
+    align-items: center;
+    /* ラベル内のアイテムを垂直方向に中央揃え */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    /* マージン調整 */
+}
+
+/* 丸型チェックボックススタイル */
+.register-checkbox-custom {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    /* 丸くする */
+    margin-right: 15px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    /* フォーカス時のアウトラインを消す */
+    display: inline-block;
+    /* インラインブロック要素として表示 */
+    vertical-align: middle;
+    /* テキストと垂直中央を揃える */
+    position: relative;
+        /* 相対位置を指定 */
+}
+
+/* チェックされた状態のデザイン */
+.register-checkbox-custom:checked {
+    background-color: black;
+    border-color: #333;
+}
+
+/* チェックマーク表示 */
+.register-checkbox-custom:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+}
+
+.register-alert-danger {
+    color: red;
+}
+
+.register-product-title2 {
+    text-align: center;
+    margin-left: -150px;
+    font-size: 45px;
+    margin-bottom: 1px;
+}
+
+.register-form-control-textarea {
+    width: 300%;
+    /* 幅を80%に設定 */
+    height: 200px;
+    /* 高さを200pxに設定 */
+    padding: 10px;
+    /* 内側の余白 */
+    border: 1px solid #ccc;
+    /* 境界線のスタイル */
+    border-radius: 4px;
+    /* 角の丸み */
+    font-size: 16px;
+    /* フォントサイズ */
+    resize: none;
+    /* リサイズ不可に設定 */
+}
+
+.register-form-control[type="file"] {
+    border: none;
+    /* 枠線を消す */
+    color: transparent;
+    /* 文字色を透明にする */
+    background-color: transparent;
+    /* 背景色を透明にする */
+    outline: none;
+    /* アウトラインを消す */
+}
+

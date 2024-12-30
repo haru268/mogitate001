@@ -1,0 +1,305 @@
+body {
+    background-color: #F8F8F8;
+    margin-top: 60px;
+}
+
+body,
+html {
+    overflow: hidden;
+    /* スクロールを完全に無効にする */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    padding-top: 7px;
+    max-width: 1200px;
+        /* 最大幅を設定 */
+        width: 100%;
+        /* 幅を100%に設定 */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* 親要素を相対位置指定に */
+    width: 100%;
+    /* 幅を全体に */
+}
+
+.add-product-container {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1050;
+    /* 必要に応じて他の要素よりも前に表示 */
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    margin-left: 210px;
+    flex-wrap: nowrap;
+        width: 100%;
+
+
+
+}
+
+.column {
+
+    padding: 10px 0px;
+        /* 上下に10px、左右に5pxのパディング */
+        flex: 0 0 auto;
+            /* flex-basisをautoに設定して、内容に基づいた幅に */
+
+}
+
+.column-1 .search-form {
+    margin-left: -20px;
+    /* 検索フォームの位置を左に20px移動 */
+}
+
+.column-1 .search-button {
+    margin-left: -20px;
+    /* 検索ボタンの位置を左に20px移動 */
+}
+
+.column-1 .sort-order {
+    margin-left: -20px;
+    /* 並び替えセレクタの位置を左に20px移動 */
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+        /* 長さを200pxに固定 */
+
+    margin-top: -70px;
+}
+
+.form-control,
+.search-button,
+.sort-order {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 230px !important;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    margin-left: -20px;
+}
+
+.search-button {
+    width: 250px;
+    padding: 10px 20px;
+    background-color: #FFA929;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.add-product-button {
+    width: 150px;
+    /* 幅 */
+    height: 35px;
+    /* ボタンの高さを直接指定 */
+    background-color: #FFA929;
+    /* 背景色 */
+    color: black;
+    /* テキスト色 */
+    padding: 5px 10px;
+    /* 上下のパディングを0に設定 */
+    text-decoration: none;
+    /* テキストの下線を除去 */
+    border-radius: 5px;
+    /* 角の丸み */
+    display: block;
+    /* ブロックレベル要素として表示 */
+    text-align: center;
+    /* テキストを中央寄せ */
+    margin-right: -15px;
+    /* 右のマージン */
+    line-height: 33px;
+    /* ボタンの高さと同じにしてテキストを垂直中央に */
+    position: fixed;
+        /* 位置を固定 */
+        right: 220px;
+            /* 右端から20pxの位置 */
+            top: 90px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+    /* 隣接するページネーションボタンとの間隔 */
+}
+
+.pagination .page-link {
+    border-radius: 100px;
+    /* ボタンの角を丸く */
+    border: 1px solid #ddd;
+    /* 枠線のスタイル */
+    padding: 8px 12px;
+    /* パディングで大きさ調整 */
+    color: black;
+    /* リンクの色 */
+    text-decoration: none;
+    /* アンダーラインを消す */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #FFA929;
+    /* アクティブページの背景色 */
+    color: white;
+    /* アクティブページのテキスト色 */
+    border: 1px solid black;
+    /* アクティブページの枠線 */
+}
+
+.pagination .page-link:hover {
+    background-color: #ddd;
+    /* ホバー時の背景色 */
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    /* 中央に配置 */
+    align-items: center;
+    width: 100%;
+    /* コンテナの幅を全体に */
+    margin-top: -80px;
+    /* 上部からのマージン */
+    margin-bottom: 20px;
+    /* 下部からのマージン */
+    position: relative;
+        top: -30px;
+        /* ページネーションを少し上に移動 */
+        left: 450px;
+}
+
+.sort-order {
+    margin-left: 8px;
+    /* 左からのマージンを20pxに設定 */
+    width: 100%;
+    /* 幅を11%に設定 */
+    padding: 10px;
+    /* パディングを10pxに設定 */
+    border: 1px solid #ccc;
+    /* 境界線を設定 */
+    border-radius: 5px;
+    /* 境界線の角を丸くする */
+    background-color: #fff;
+    /* 背景色を白に設定 */
+    color: #333;
+    /* テキスト色を暗いグレーに設定 */
+    font-size: 16px;
+    /* フォントサイズを16pxに設定 */
+}
+
+
+.product-title-container {
+    margin-top: -20px;
+    /* タイトルの位置を上に調整 */
+    padding-bottom: 50px;
+    /* 下部の余白を調整して他の要素との隙間を作る */
+}
+
+.product-title {
+    text-align: left;
+    margin-left: 170px;
+    /* 左のマージンを維持 */
+    padding-left: -500;
+    /* 左のパディングをなくす */
+    font-size: 40px;
+    /* フォントサイズを設定 */
+    font-weight: bold;
+    /* フォントを太字に設定 */
+    color: black;
+    /* テキストの色を設定 */
+    position: sticky;
+        top: 0;
+        /* ページの上部に固定 */
+}
+
+.product-card {
+    height: 330px;
+    margin: 20px 10px;
+        /* 上下に50px、左右に20pxのマージン */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影の追加 */
+    position: relative;
+    /* 下部のラベルの位置指定のための設定 */
+    overflow: hidden;
+    /* 画像が枠を超えた場合に隠す */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /* 背景を白に */
+    border-radius: 5px;
+        /* 角を丸くする */
+        position: relative;
+            top: -90px;
+            /* カードを上に20pxずらす */
+            /* その他のスタイル */
+}
+
+.product-card img {
+    width: 100%;
+    height: 83%;
+    /* 画像の高さをカードの100%に調整 */
+    object-fit: cover;
+    /* 画像をカバーとして扱う */
+    transition: transform 0.3s ease;
+    /* トランジション効果を追加 */
+    position: relative;
+    top: -9%;
+        /* 画像を上に10%ずらす */
+}
+
+.product-card .card-body {
+    display: flex; /* Flexboxを有効化 */
+    justify-content: space-between;
+        /* 中央揃え */
+    align-items: center; /* 中央揃えにする */
+    background-color: white;
+    /* 半透明の白背景 */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+        /* 内側のパディング */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    /* 内側の影を追加 */
+}
+
+.card-title,
+.card-price {
+    margin: 0 20px;
+    color: black;
+    /* テキストの色を黒に */
+    font-weight: bold;
+    /* テキストを太字に */
+    font-size: 20px;
+        /* フォントサイズを大きく */
+        
+}

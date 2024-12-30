@@ -1,0 +1,375 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* 必要であれば背景色を設定 */
+    padding: 10px 20px;
+    /* 必要に応じて余白を調整 */
+}
+
+.container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.product-header7 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-right: 550px;
+    text-align: left;
+    position: relative;
+    top: 30px;
+    margin-right: 400px;
+    white-space: nowrap;
+    display: flex;
+}
+
+.product-body7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-image7 {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: -100px;
+}
+
+.product-form7 label {
+    font-size: 20px;
+    /* ラベルのフォントサイズを大きくする */
+    margin-bottom: 100px;
+    /* ラベルと入力欄の間の隙間を広げる */
+    color: #333;
+    font-weight: bold;
+}
+
+/* 商品名のラベル */
+#product-name7-label {
+    position: relative;
+        /* 相対位置を設定 */
+        top: 20px;
+        /* 上方向に移動 */
+    margin-bottom: 250px;
+    /* 商品名のラベルと入力欄の間の隙間を広げる */
+}
+
+/* 商品名の入力欄 */
+#product-name7 {
+    margin-top: 30px;
+    /* 入力欄の上部に余白を追加 */
+    margin-bottom: 40px;
+}
+
+#product-price7-label {
+    display: block;
+    /* ラベルをブロック要素に */
+    margin-bottom: 10px;
+    /* ラベルと入力欄の間の余白 */
+    font-size: 20px;
+    /* ラベルのフォントサイズ */
+    font-weight: bold;
+    /* ラベルを太字に */
+    color: #333;
+    /* ラベルの色 */
+}
+
+#product-price7 {
+    display: block;
+    /* 入力欄をブロック要素に */
+    width: 100%;
+    /* 入力欄の幅を調整 */
+    padding: 14px;
+    /* 入力欄の内側の余白 */
+    font-size: 16px;
+    /* 入力欄のフォントサイズ */
+    margin-bottom: 15px;
+    /* 入力欄の下部余白 */
+    border: 1px solid #ccc;
+    /* 入力欄の枠線 */
+    border-radius: 5px;
+    /* 入力欄の角丸 */
+}
+
+
+.product-form7 input[type="text"],
+.product-form7 input[type="number"] {
+    width: 100%;
+    /* 入力欄の幅をコンテナに合わせて最大化 */
+    padding: 15px 20px;
+    /* 内側の余白を増やしてタイピングの快適さを向上 */
+    font-size: 16px;
+    /* フォントサイズを大きくして読みやすくする */
+    border: 1px solid #ccc;
+    /* 枠線を適切に設定 */
+    border-radius: 5px;
+    /* 角を丸くする */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* ソフトな影を内側に追加 */
+}
+
+.product-form7 {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 10px;
+}
+
+.product-form7 input,
+.product-form7 select {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.product-name7,
+.product-price7 {
+    width: 90% !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-file-input7 {
+    width: 200px;
+    /* ボタンの幅を大きくする */
+    padding: 15px 20px;
+    /* ボタンの内側余白を大きく */
+    font-size: 16px;
+    /* ボタン内テキストのフォントサイズを大きく */
+
+    border-radius: 5px;
+    /* ボタンの角を少し丸くする */
+    color: black;
+    /* テキストの色 */
+    margin-left: -600px;
+    /* ボタンを左に移動 */
+    position: relative;
+        /* 相対位置を設定 */
+        top: -230px;
+        /* 上方向に移動 */
+    display: inline-block;
+    /* ボタンをインラインブロックに */
+    text-align: center;
+    /* テキストを中央揃え */
+}
+.file-input-container7 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.product-description7 {
+    width: 220%;
+    /* 入力欄の幅を広げる */
+    height: 150px;
+    /* 高さを大きく */
+    font-size: 18px;
+    /* テキストのフォントサイズを大きく */
+    padding: 10px;
+    /* 内側の余白を調整 */
+    border: 1px solid #ccc;
+    /* 枠線の色 */
+    border-radius: 5px;
+    /* 角を丸くする */
+    resize: none;
+    /* リサイズを無効化 */
+    margin-bottom: 15px;
+    /* 下部の余白 */
+    margin-left: -570px;
+}
+
+.actions7 {
+    width: 290%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: -1000px;
+}
+
+.btn-primary7,
+.btn-secondary7,
+.btn-danger7 {
+    width: 15%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+}
+
+.btn-primary7 {
+    margin-left: 600px;
+    background-color: #CCCCCC;
+    width: 100%;
+}
+
+.btn-secondary7 {
+    background-color: #F5C900;
+    width: 100%;
+    margin-right: 100px;
+}
+
+.btn-danger7 {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 800px;
+    margin-top: -80px;
+}
+
+.delete-icon {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+.product-list-title {
+    color: #90CEE9;
+    flex-shrink: 0;
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+/* 季節ラベルのスタイル調整 */
+.label-season7 {
+    display: block;
+    margin-bottom: 5px;
+    /* ラベルとチェックボックスの間に余白を設ける */
+    font-weight: bold;
+    font-size: 18px;
+    /* ラベルのフォントサイズを調整して見やすくする */
+    margin-top: 60px;
+}
+
+/* チェックボックスグループの位置調整 */
+.checkbox-group7 {
+    position: relative;
+        /* 相対位置を設定 */
+        top: -70px;
+        /* 上方向に移動 */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* 中央揃えにすることで見栄えを整える */
+    margin-bottom: 5px;
+}
+
+.checkbox-label7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 60px;
+    position: relative;
+    top: -20px;
+}
+
+.checkbox-label7 input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.checkbox-label7 input[type="checkbox"]:checked {
+    background-color: black;
+    border-color: #333;
+}
+
+.checkbox-label7 input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}
+
+.checkbox-label7 span {
+    user-select: none;
+}
+
+label[for="product-image7"] {
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+label[for="product-description7"] {
+    font-size: 20px;
+    /* ラベルの文字サイズを大きく */
+    font-weight: bold;
+    /* 太字に */
+    color: #333;
+    /* ラベルの色 */
+    margin-bottom: 10px;
+    /* 入力欄との隙間 */
+    margin-left: -570px;
+    margin-top: -250px;
+    /* 上に移動 */
+    display: block;
+    /* ブロック要素として扱う */
+    text-align: left;
+    /* 左寄せ */
+}
+
+.season-text7 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    white-space: nowrap;
+}
+
+#file-name {
+    position: relative;
+    /* 相対位置を設定 */
+    top: -10px;
+    /* 上方向に移動する */
+    margin-top: -450px;
+    /* 上方向に移動する余白を調整 */
+    margin-left: -270px;
+    display: inline-block;
+    /* インライン要素として扱う */
+    display: none;
+        /* 要素を非表示にする */
+}
