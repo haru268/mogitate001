@@ -21,11 +21,16 @@ Laraveru環境構築
 6.php artisan db:seed
 
 使用技術 
+
 .PHP 7.4.9 
+
 .Laravel 8.83.29 
+
 .mysql 15.1
 
 URL 
+
 .環境開発:http://localhost/ 
+
 .phpMyAdmin:http://localhost:8080/ 
 
