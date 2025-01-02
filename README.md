@@ -34,4 +34,5 @@ URL
 
 .phpMyAdmin:http://localhost:8080/ 
 
-# mogitate001
+ER図
+![mogitateER図](https://github.com/user-attachments/assets/6f9f4007-4704-4469-bfaf-765c0c0e0d96)
